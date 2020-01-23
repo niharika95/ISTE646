@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merienda+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Niharika Dalal - IST646</title>
+  </head>
+  <body>
+    <div class="navigation">
+      <a class="brandName" href="#firstScreen">Niharika Dalal</a>
+      <div class="navLinks">
+        <a class="link" href="#secondScreen">About me</a>
+        <a class="link" href="#thirdScreen">Projects</a>
+      </div>
+      <div class="hamburgerIconContainer">
+        <div class="hamburgerIconDiv">
+          <img src="assets/hamburgerMenu.png" class="hamburgerIcon" />
+        </div>
+        <div class="navLinksHamburger">
+          <a class="linkHamburger" href="#secondScreen">About me</a>
+          <a class="linkHamburger" href="#thirdScreen">Projects</a>
+        </div>
+      </div>
+    </div>
+    <section id="firstScreen">
+      <div class="firstScreenContent">
+        <div class="profileImageContainer">
+          <img src="assets/profileImage.png" class="profileImage" />
+        </div>
+        <div class="nameIntro">
+          <p class="hi">Hi! I'm</p>
+          <p class="name">Niharika Dalal</p>
+        </div>
+      </div>
+    </section>
+    <section id="secondScreen">
+      <div class="secondScreenContent">
+        <h4 class="aboutMe">About me</h4>
+        <p class="information">
+          Born on September 13th, 1995, I've lived most of my life in Mumbai,
+          India. Earned a bachelor's degree in computer engineering from NMIMS
+          University (India), and am currently pursuing a master's degree in
+          software engineering at Rochester Institute of Technology. As a design
+          enthusiast, I enjoy doing graphic, interaction and user experience
+          design; and mystery/crime is my go-to genre when it comes to novels
+          and movies!
+        </p>
+      </div>
+    </section>
+    <section id="thirdScreen">
+      <div class="thirdScreenContent">
+        <h4 class="projects">Projects</h4>
+        <div class="tabs">
+          <div class="tabLink" id="tabLink1">
+            <p>Homework &<br />Class Assignments</p>
+            <hr class="tabUnderline" id="tabUnderline1" />
+          </div>
+          <p>|</p>
+          <div class="tabLink" id="tabLink2">
+            <p>Individual<br />Projects</p>
+            <hr class="tabUnderline" id="tabUnderline2" />
+          </div>
+          <p>|</p>
+          <div class="tabLink" id="tabLink3">
+            <p>Group<br />Projects</p>
+            <hr class="tabUnderline" id="tabUnderline3" />
+          </div>
+        </div>
+        <hr />
+        <div class="projectsSection">
+          <div id="homeworkSection">
+            <a><button class="taskLink">Homework 1</button></a>
+          </div>
+          <div id="individualProjectsSection"></div>
+          <div id="groupProjectsSection"></div>
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript" src="javascript.js"></script>
+  </body>
+</html>

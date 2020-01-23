@@ -1,0 +1,342 @@
+body {
+  background-image: url('assets/mainBackground.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+}
+
+a {
+  font-family: 'Open Sans', sans-serif;
+}
+
+p {
+  margin: 0px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.navigation {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 50px;
+  background-image: url(assets/mainBackground.jpg);
+  background-size: cover;
+  position: fixed;
+  top: 0;
+}
+
+.brandName {
+  font-size: 24px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #303030;
+  text-decoration: none;
+}
+
+.brandName:hover {
+  color: #303030;
+  text-decoration: none;
+}
+
+.link {
+  margin-left: 20px;
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #303030;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #303030;
+}
+
+.hamburgerIconContainer {
+  display: none;
+}
+
+#firstScreen,
+#secondScreen,
+#thirdScreen {
+  width: 100%;
+}
+
+#firstScreen {
+  padding-top: 56px;
+  height: 700px;
+}
+
+.profileImageContainer {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.profileImage {
+  height: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  box-shadow: 0px 0px 45px -5px rgba(0, 0, 0, 0.4);
+}
+
+.nameIntro {
+  text-align: center;
+}
+
+.hi {
+  font-size: 30px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400px;
+}
+
+.name {
+  font-size: 50px;
+  font-family: 'Merienda One', cursive;
+}
+
+#secondScreen {
+  background: url(assets/informationBackground3.jpg);
+  background-size: cover;
+  height: 800px;
+}
+
+.secondScreenContent {
+  width: 60%;
+  margin: auto;
+  color: white;
+  padding-top: 200px;
+}
+
+h4 {
+  font-size: 28px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+.aboutMe {
+  color: #f4f4f4;
+}
+
+h4::after {
+  content: '\a_____';
+  white-space: pre;
+}
+
+.information {
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: justify;
+  color: #f4f4f4;
+  line-height: 40px;
+}
+
+#thirdScreen {
+  height: 800px;
+}
+
+.thirdScreenContent {
+  width: 60%;
+  margin: auto;
+  color: #303030;
+  padding-top: 150px;
+}
+
+.projects {
+  color: #303030;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.tabLink {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.tabUnderline {
+  visibility: hidden;
+  border-top: 3px solid #7e7e7e;
+}
+
+.projectsSection {
+  margin-top: 20px;
+}
+
+#homeworkSection {
+  display: none;
+}
+
+#individualProjectsSection {
+  display: none;
+}
+
+#groupProjectsSection {
+  display: none;
+}
+
+.taskLink {
+  width: auto;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #545454;
+  color: #f4f4f4;
+  border-radius: 5px;
+  border: none;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.taskLink:focus {
+  outline: none;
+}
+
+/* @media only screen and (max-width: 800px) {
+  .navigation {
+    width: 100vw;
+    padding: 10px 25px;
+    background-image: url(assets/mainBackground.jpg);
+    background-size: cover;
+    position: fixed;
+    top: 0;
+  }
+
+  .brandName {
+    font-weight: 400;
+  }
+
+  .navLinks {
+    display: none;
+  }
+
+  .hamburgerIconContainer {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hamburgerIconDiv {
+    text-align: right;
+  }
+
+  .hamburgerIcon {
+    height: 20px;
+    width: 20px;
+    margin: 10px 0px;
+  }
+
+  .navLinksHamburger {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+  }
+
+  .linkHamburger {
+    padding-top: 5px;
+    color: #303030;
+    cursor: pointer;
+  }
+
+  .linkHamburger:hover {
+    color: #303030;
+  }
+
+  #firstScreen {
+    padding-top: 56px;
+    height: 450px;
+  }
+
+  .profileImageContainer {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .profileImage {
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    box-shadow: 0px 0px 45px -5px rgba(0, 0, 0, 0.4);
+  }
+
+  .hi {
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400px;
+  }
+
+  .name {
+    font-size: 30px;
+    font-family: 'Merienda One', cursive;
+  }
+
+  #secondScreen {
+    height: 650px;
+  }
+
+  .secondScreenContent {
+    width: 80%;
+    margin: auto;
+    color: white;
+    padding-top: 100px;
+  }
+
+  h4 {
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: #f4f4f4;
+  }
+
+  h4::after {
+    content: '\a_____';
+    white-space: pre;
+  }
+
+  .information {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  #thirdScreen {
+    height: 650px;
+  }
+
+  .thirdScreenContent {
+    width: 80%;
+    margin: auto;
+    color: #303030;
+    padding-top: 50px;
+  }
+
+  .projects {
+    color: #303030;
+  }
+
+  .tabs {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .tabLink {
+    line-height: 1;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  hr {
+    margin-bottom: 30px;
+  }
+} */

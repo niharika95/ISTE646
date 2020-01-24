@@ -1,5 +1,5 @@
 body {
-  background-image: url('assets/mainBackground.jpg');
+  background-image: url(assets/mainBackground.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -16,19 +16,18 @@ p {
 }
 
 .navigation {
-  width: 100vw;
   display: flex;
   justify-content: space-between;
   padding: 10px 50px;
   background-image: url(assets/mainBackground.jpg);
   background-size: cover;
-  position: fixed;
+  position: sticky;
   top: 0;
+  /* box-sizing: border-box; */
 }
 
 .brandName {
   font-size: 24px;
-  font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   color: #303030;
   text-decoration: none;
@@ -42,7 +41,6 @@ p {
 .link {
   margin-left: 20px;
   font-size: 20px;
-  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   color: #303030;
   text-decoration: none;
@@ -50,6 +48,7 @@ p {
 
 .link:hover {
   color: #303030;
+  text-decoration: underline;
 }
 
 .hamburgerIconContainer {
@@ -87,7 +86,6 @@ p {
 
 .hi {
   font-size: 30px;
-  font-family: 'Open Sans', sans-serif;
   font-weight: 400px;
 }
 
@@ -106,7 +104,7 @@ p {
   width: 60%;
   margin: auto;
   color: white;
-  padding-top: 200px;
+  padding-top: 180px;
 }
 
 h4 {
@@ -126,10 +124,17 @@ h4::after {
 
 .information {
   font-size: 20px;
-  font-family: 'Open Sans', sans-serif;
   text-align: justify;
   color: #f4f4f4;
   line-height: 40px;
+}
+
+.email {
+  font-style: italic;
+  color: #f4f4f4;
+}
+.email:hover {
+  font-weight: 600;
 }
 
 #thirdScreen {
@@ -140,7 +145,7 @@ h4::after {
   width: 60%;
   margin: auto;
   color: #303030;
-  padding-top: 150px;
+  padding-top: 70px;
 }
 
 .projects {
@@ -160,7 +165,6 @@ h4::after {
   font-weight: 600;
   text-align: center;
   cursor: pointer;
-  font-family: 'Open Sans', sans-serif;
 }
 
 .tabUnderline {
@@ -192,14 +196,13 @@ h4::after {
   color: #f4f4f4;
   border-radius: 5px;
   border: none;
-  font-family: 'Open Sans', sans-serif;
 }
 
 .taskLink:focus {
   outline: none;
 }
 
-/* @media only screen and (max-width: 800px) {
+@media only screen and (max-width: 800px) {
   .navigation {
     width: 100vw;
     padding: 10px 25px;
@@ -270,7 +273,6 @@ h4::after {
 
   .hi {
     font-size: 20px;
-    font-family: 'Open Sans', sans-serif;
     font-weight: 400px;
   }
 
@@ -292,7 +294,6 @@ h4::after {
 
   h4 {
     font-size: 20px;
-    font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     color: #f4f4f4;
   }
@@ -339,4 +340,4 @@ h4::after {
   hr {
     margin-bottom: 30px;
   }
-} */
+}

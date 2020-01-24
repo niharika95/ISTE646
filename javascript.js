@@ -1,3 +1,19 @@
+// Navigation Scroll Shadow
+window.addEventListener('scroll', function(e) {
+  if (window.scrollY > 53) {
+    document.querySelector('.navigation').style.boxShadow = '0px 0px 5px #aaa'
+  } else {
+    document.querySelector('.navigation').style.boxShadow = 'none'
+  }
+})
+
+// Profile Image animation
+let profileImage = document.querySelector('.profileImage')
+console.log('pi: ', profileImage.style.display)
+document.onload = function() {
+  profileImage.style.display = 'none'
+}
+
 const informationBackgroundImages = [
   'assets/informationBackground1.jpg',
   'assets/informationBackground2.jpg',
@@ -49,8 +65,9 @@ function toggleNavigationDropdown() {
 let hamIcon = document.querySelector('.hamburgerIconContainer')
 hamIcon.addEventListener('click', toggleNavigationDropdown)
 
-// let body = document.querySelector('.hamburgerIconContainer')
-// body.addEventListener('click', console.log(body))
+document.addEventListener('click', function() {
+  document.querySelector('.navLinksHamburger').style.display = 'none'
+})
 
 // Projects Section show/hide
 let homeworkTab = document.querySelector('#tabLink1')

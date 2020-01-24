@@ -1,4 +1,4 @@
-// Navigation Scroll Shadow
+// NAVIGATION SCROLL SHADOW - START
 window.addEventListener('scroll', function(e) {
   if (window.scrollY > 53) {
     document.querySelector('.navigation').style.boxShadow = '0px 0px 5px #aaa'
@@ -6,14 +6,17 @@ window.addEventListener('scroll', function(e) {
     document.querySelector('.navigation').style.boxShadow = 'none'
   }
 })
+// NAVIGATION SCROLL SHADOW - END
 
-// Profile Image animation
-let profileImage = document.querySelector('.profileImage')
-console.log('pi: ', profileImage.style.display)
-document.onload = function() {
-  profileImage.style.display = 'none'
-}
+// PROFILE IMAGE ANIMATION - START
+let profileImageOverlay = document.querySelector('.overlay')
+window.addEventListener('load', event => {
+  profileImageOverlay.style.backgroundColor = 'transparent'
+  profileImageOverlay.style.transition = 'background-color 5s ease'
+})
+// PROFILE IMAGE ANIMATION - END
 
+// SECOND SCREEN IMAGE ROTATION - START
 const informationBackgroundImages = [
   'assets/informationBackground1.jpg',
   'assets/informationBackground2.jpg',
@@ -41,18 +44,9 @@ window.onload = () => {
 // function selectProjectTab(selectedTab) {
 //   selectedTab.style.backgroundColor = '#000'
 // }
+// SECOND SCREEN IMAGE ROTATION - END
 
-let projectTabs = document.querySelectorAll('.tabLink')
-projectTabs.forEach((tab, i) => {
-  // console.log('asdf: ', tab)
-  // tab.addEventListener('click', (tab.style.backgroundColor = '#000'))
-})
-
-// projectTab.addEventListener('click', function(event) {
-//   projectTab.style.backgroundColor = '#000'
-// })
-
-// Navigation DropDown
+// NAVIGATION DROPDOWN - START
 function toggleNavigationDropdown() {
   let navLinksDropDown = document.querySelector('.navLinksHamburger')
   if (navLinksDropDown.style.display === 'none') {
@@ -60,16 +54,27 @@ function toggleNavigationDropdown() {
   } else {
     navLinksDropDown.style.display = 'none'
   }
+  return
 }
 
 let hamIcon = document.querySelector('.hamburgerIconContainer')
 hamIcon.addEventListener('click', toggleNavigationDropdown)
 
-document.addEventListener('click', function() {
+let screen1 = document.querySelector('#firstScreen')
+screen1.addEventListener('click', function() {
   document.querySelector('.navLinksHamburger').style.display = 'none'
 })
+let screen2 = document.querySelector('#firstScreen')
+screen2.addEventListener('click', function() {
+  document.querySelector('.navLinksHamburger').style.display = 'none'
+})
+let screen3 = document.querySelector('#firstScreen')
+screen3.addEventListener('click', function() {
+  document.querySelector('.navLinksHamburger').style.display = 'none'
+})
+// NAVIGATION DROPDOWN - END
 
-// Projects Section show/hide
+// PROJECTS SECTION SHOW/HIDE - START
 let homeworkTab = document.querySelector('#tabLink1')
 let individualProjectTab = document.querySelector('#tabLink2')
 let groupProjectTab = document.querySelector('#tabLink3')
@@ -106,3 +111,4 @@ groupProjectTab.addEventListener('click', () => {
   individualProjectsSection.style.display = 'none'
   groupProjectsSection.style.display = 'flex'
 })
+// PROJECTS SECTION SHOW/HIDE - END

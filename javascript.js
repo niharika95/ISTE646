@@ -1,4 +1,5 @@
 // NAVIGATION SCROLL SHADOW - START
+// When the navigation bar is scrolled a certain pixels, a shadow shows up at the bottom of the navigation bar.
 window.addEventListener('scroll', function(e) {
   if (window.scrollY > 53) {
     document.querySelector('.navigation').style.boxShadow = '0px 0px 5px #aaa'
@@ -9,6 +10,7 @@ window.addEventListener('scroll', function(e) {
 // NAVIGATION SCROLL SHADOW - END
 
 // PROFILE IMAGE ANIMATION - START
+// The profile picture is animated from a black circle to the actual image to show a transition effect.
 let profileImageOverlay = document.querySelector('.overlay')
 window.addEventListener('load', event => {
   profileImageOverlay.style.backgroundColor = 'transparent'
@@ -17,6 +19,7 @@ window.addEventListener('load', event => {
 // PROFILE IMAGE ANIMATION - END
 
 // NAVIGATION DROPDOWN - START
+// On a screen with width less than 800px, clicking the hamburger menu icon, triggers the drop down of accessible links to navigate to different sections of the website.
 function toggleNavigationDropdown() {
   let navLinksDropDown = document.querySelector('.navLinksHamburger')
   navLinksDropDown.classList.toggle('open')
@@ -39,7 +42,8 @@ screen3.addEventListener('click', function() {
 })
 // NAVIGATION DROPDOWN - END
 
-// PROJECTS SECTION SHOW/HIDE - START
+// SHOWING PROJECTS SECTION - START
+// On clicking on one of the tabs under the Projects section, it shows the homeworks/projects available under that category.
 let homeworkTab = document.querySelector('#tabLink1')
 let individualProjectTab = document.querySelector('#tabLink2')
 let groupProjectTab = document.querySelector('#tabLink3')
@@ -76,9 +80,11 @@ groupProjectTab.addEventListener('click', () => {
   individualProjectsSection.style.display = 'none'
   groupProjectsSection.style.display = 'flex'
 })
-// PROJECTS SECTION SHOW/HIDE - END
+// SHOWING PROJECTS SECTION - END
 
 // SECOND SCREEN IMAGE ROTATION - START
+// Background images revolve every few seconds on the description screen.
+// Issue: white background flashes inbetween transition from one image to another.
 // const informationBackgroundImages = [
 //   'assets/informationBackground1.jpg',
 //   'assets/informationBackground2.jpg',

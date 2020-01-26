@@ -16,12 +16,14 @@
     <title>Niharika Dalal - IST646</title>
   </head>
   <body>
+    <!-- navigation bar -->
     <div class="navigation">
       <a class="brandName" href="#firstScreen">Niharika Dalal</a>
       <div class="navLinks">
         <a class="link" href="#secondScreen">About me</a>
         <a class="link" href="#thirdScreen">Projects</a>
       </div>
+      <!-- hamburger icon for responsive design -->
       <div class="hamburgerIconContainer">
         <div class="hamburgerIconDiv">
           <img
@@ -36,6 +38,7 @@
         </div>
       </div>
     </div>
+    <!-- first screen - image and name -->
     <section id="firstScreen">
       <div class="firstScreenContent">
         <div class="profileImageContainer">
@@ -52,6 +55,7 @@
         </div>
       </div>
     </section>
+    <!-- second screen - description -->
     <section id="secondScreen">
       <div class="secondScreenContent">
         <h4 class="aboutMe">About me</h4>
@@ -69,6 +73,7 @@
         </p>
       </div>
     </section>
+    <!-- third screen - projects -->
     <section id="thirdScreen">
       <div class="thirdScreenContent">
         <h4 class="projects">Projects</h4>
@@ -98,6 +103,7 @@
         </div>
       </div>
     </section>
+    <!-- footer - indicates the last modified date -->
     <footer>
       <?php $filename = 'index.php';
         if (file_exists($filename))

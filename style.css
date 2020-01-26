@@ -222,6 +222,18 @@ h4::after {
   box-shadow: 0px 0px 10px -3px rgba(0, 0, 0, 0.7);
 }
 
+footer {
+  text-align: right;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  background-color: #303030;
+  color: #f4f4f4;
+  padding: 10px 20px 10px 0px;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+
 @media only screen and (max-width: 800px) {
   .navigation {
     width: 100vw;
@@ -259,9 +271,18 @@ h4::after {
   }
 
   .navLinksHamburger {
-    display: none;
+    display: flex;
     flex-direction: column;
     text-align: right;
+    opacity: 0;
+    max-height: 0px;
+    transition: 0.2s;
+  }
+
+  .navLinksHamburger.open {
+    opacity: 1;
+    max-height: 999px;
+    height: auto;
   }
 
   .linkHamburger {
@@ -370,5 +391,10 @@ h4::after {
 
   hr {
     margin-bottom: 25px;
+  }
+
+  footer {
+    padding: 8px 10px 8px 0px;
+    font-size: 12px;
   }
 }

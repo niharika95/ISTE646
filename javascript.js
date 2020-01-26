@@ -16,45 +16,10 @@ window.addEventListener('load', event => {
 })
 // PROFILE IMAGE ANIMATION - END
 
-// SECOND SCREEN IMAGE ROTATION - START
-const informationBackgroundImages = [
-  'assets/informationBackground1.jpg',
-  'assets/informationBackground2.jpg',
-  'assets/informationBackground3.jpg'
-]
-
-let informationBackground = document.querySelector('#secondScreen')
-
-const cycleImages = (images, container, step) => {
-  images.forEach((image, i) =>
-    setTimeout(() => {
-      container.style.backgroundImage = `url(${image})`
-    }, step * (i + 1))
-  )
-  setTimeout(
-    () => cycleImages(informationBackgroundImages, informationBackground, step),
-    step * images.length
-  )
-}
-
-window.onload = () => {
-  // cycleImages(informationBackgroundImages, informationBackground, 3000)
-}
-
-// function selectProjectTab(selectedTab) {
-//   selectedTab.style.backgroundColor = '#000'
-// }
-// SECOND SCREEN IMAGE ROTATION - END
-
 // NAVIGATION DROPDOWN - START
 function toggleNavigationDropdown() {
   let navLinksDropDown = document.querySelector('.navLinksHamburger')
-  if (navLinksDropDown.style.display === 'none') {
-    navLinksDropDown.style.display = 'flex'
-  } else {
-    navLinksDropDown.style.display = 'none'
-  }
-  return
+  navLinksDropDown.classList.toggle('open')
 }
 
 let hamIcon = document.querySelector('.hamburgerIconContainer')
@@ -112,3 +77,33 @@ groupProjectTab.addEventListener('click', () => {
   groupProjectsSection.style.display = 'flex'
 })
 // PROJECTS SECTION SHOW/HIDE - END
+
+// SECOND SCREEN IMAGE ROTATION - START
+// const informationBackgroundImages = [
+//   'assets/informationBackground1.jpg',
+//   'assets/informationBackground2.jpg',
+//   'assets/informationBackground3.jpg'
+// ]
+
+// let informationBackground = document.querySelector('#secondScreen')
+
+// const cycleImages = (images, container, step) => {
+//   images.forEach((image, i) =>
+//     setTimeout(() => {
+//       container.style.backgroundImage = `url(${image})`
+//     }, step * (i + 1))
+//   )
+//   setTimeout(
+//     () => cycleImages(informationBackgroundImages, informationBackground, step),
+//     step * images.length
+//   )
+// }
+
+// window.onload = () => {
+// cycleImages(informationBackgroundImages, informationBackground, 3000)
+// }
+
+// function selectProjectTab(selectedTab) {
+//   selectedTab.style.backgroundColor = '#000'
+// }
+// SECOND SCREEN IMAGE ROTATION - END

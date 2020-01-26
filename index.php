@@ -91,14 +91,21 @@
         <hr />
         <div class="projectsSection">
           <div id="homeworkSection">
-            <a href="" class="taskLink" target="_blank">Homework 1</a>
+            <a href="http://serenity.ist.rit.edu/~nrd8504/646/HW1/" class="taskLink" target="_blank">Homework 1</a>
           </div>
           <div id="individualProjectsSection"></div>
           <div id="groupProjectsSection"></div>
         </div>
       </div>
     </section>
-    <footer>Last modified: Jan 26, 2020</footer>
+    <footer>
+      <?php $filename = 'index.php';
+        if (file_exists($filename))
+          {
+            echo "Last modified: " . date ("l, F d Y h:ia", filemtime($filename));
+          }
+      ?>
+    </footer>
     <script src="javascript.js"></script>
   </body>
 </html>

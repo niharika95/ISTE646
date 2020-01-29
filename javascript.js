@@ -61,6 +61,7 @@ homeworkTab.addEventListener('click', () => {
   tabUnderline2.style.visibility = 'hidden'
   tabUnderline3.style.visibility = 'hidden'
   homeworkSection.style.display = 'flex'
+  homeworkSection.style.justifyContent = 'space-evenly'
   individualProjectsSection.style.display = 'none'
   groupProjectsSection.style.display = 'none'
 })
@@ -70,6 +71,7 @@ individualProjectTab.addEventListener('click', () => {
   tabUnderline3.style.visibility = 'hidden'
   homeworkSection.style.display = 'none'
   individualProjectsSection.style.display = 'flex'
+  individualProjectsSection.style.justifyContent = 'space-evenly'
   groupProjectsSection.style.display = 'none'
 })
 groupProjectTab.addEventListener('click', () => {
@@ -79,6 +81,7 @@ groupProjectTab.addEventListener('click', () => {
   homeworkSection.style.display = 'none'
   individualProjectsSection.style.display = 'none'
   groupProjectsSection.style.display = 'flex'
+  groupProjectsSection.style.justifyContent = 'space-evenly'
 })
 // SHOWING PROJECTS SECTION - END
 

@@ -97,6 +97,8 @@
         <div class="projectsSection">
           <div id="homeworkSection">
             <a href="http://serenity.ist.rit.edu/~nrd8504/646/HW1/" class="taskLink" target="_blank">Homework 1</a>
+            <a href="http://serenity.ist.rit.edu/~nrd8504/646/HW2B/" class="taskLink" target="_blank">Homework 2B</a>
+            <!-- <a href="http://serenity.ist.rit.edu/~nrd8504/646/HW2C/" class="taskLink" target="_blank">Homework 2C</a> -->
           </div>
           <div id="individualProjectsSection"></div>
           <div id="groupProjectsSection"></div>

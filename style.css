@@ -197,6 +197,7 @@ h4::after {
 
 #homeworkSection {
   display: none;
+  justify-content: space-evenly;
 }
 
 #individualProjectsSection {
@@ -216,6 +217,7 @@ h4::after {
   border-radius: 5px;
   border: none;
   text-decoration: none;
+  text-align: center;
 }
 
 .taskLink:hover {

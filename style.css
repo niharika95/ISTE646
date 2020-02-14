@@ -209,7 +209,7 @@ h4::after {
 }
 
 .taskLink {
-  width: auto;
+  width: 115px;
   padding: 10px;
   border-radius: 5px;
   background-color: #545454;
@@ -218,6 +218,7 @@ h4::after {
   border: none;
   text-decoration: none;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .taskLink:hover {

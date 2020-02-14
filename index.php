@@ -101,6 +101,8 @@
             <a href="http://serenity.ist.rit.edu/~nrd8504/646/HW2C/" class="taskLink" target="_blank">Homework 2C</a>
             <a href="http://serenity.ist.rit.edu/~nrd8504/646/HW3A/" class="taskLink" target="_blank">Homework 3A</a>
             <a href="http://serenity.ist.rit.edu/~nrd8504/646/HW3B/" class="taskLink" target="_blank">Homework 3B</a>
+            <a href="http://serenity.ist.rit.edu/~nrd8504/646/HW4A/" class="taskLink" target="_blank">Homework 4A</a>
+            <a href="http://serenity.ist.rit.edu/~nrd8504/646/HW4B/" class="taskLink" target="_blank">Homework 4B</a>
           </div>
           <div id="individualProjectsSection"></div>
           <div id="groupProjectsSection"></div>

@@ -106,9 +106,14 @@
             <a href="http://serenity.ist.rit.edu/~nrd8504/646/HW5/" class="taskLink" target="_blank">Homework 5</a>
             <a href="http://serenity.ist.rit.edu/~nrd8504/646/HW6B/" class="taskLink" target="_blank">Homework 6B</a>
             <a href="http://serenity.ist.rit.edu/~nrd8504/646/HW7/" class="taskLink" target="_blank">Homework 7</a>
+            <a href="http://serenity.ist.rit.edu/~nrd8504/646/HW10A/" class="taskLink" target="_blank">Homework 10A</a>
           </div>
-          <div id="individualProjectsSection"></div>
-          <div id="groupProjectsSection"></div>
+          <div id="individualProjectsSection">
+            <a href="http://serenity.ist.rit.edu/~nrd8504/646/individual_project/" class="taskLink" target="_blank">Individual Project</a>
+          </div>
+          <div id="groupProjectsSection">
+            <a href="http://serenity.ist.rit.edu/~nrd8504/646/GroupProjectII/" class="taskLink" target="_blank">Group Project II</a>
+          </div>
         </div>
       </div>
     </section>
